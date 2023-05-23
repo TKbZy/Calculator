@@ -1,0 +1,7 @@
+                try {
+                    Double.parseDouble(sub);
+                    words.add(new Word(sub, i, 7));
+                } catch (Exception _e) {
+                    //数字含有其他字符，如2134q3
+                    return new Result(errorMessage(i, j), "");
+                }
