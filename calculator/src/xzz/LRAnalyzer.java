@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.ArrayList;
 
 record LRAnalyzer(String expression, ArrayList<Word> words) {
-    //action、goto表  0代表出错、-1代表规约、1-9代表
+    //action、goto表  0代表出错、-1代表规约、1-9代表状态
     private static final int[][] ACTION = {
         {0, 0, 0, 0, 6, 0, 7, 0, 1},
         {2, 3, 4, 5, 0, 0, 0, 100, 0},
